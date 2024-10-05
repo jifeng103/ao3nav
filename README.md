@@ -22,7 +22,7 @@
 链接为：https://ao3rc.andbru123.us.kg
 * [点击访问 镜像 1分流](https://ao3sg.andbru123.cc.ua/)
 链接为：https://ao3sg.andbru123.cc.ua
-* [点击访问 点击访问 镜像 2分流](https://ao3rc.andbru123.cc.ua/)
+* [点击访问 镜像 2分流](https://ao3rc.andbru123.cc.ua/)
 链接为：https://ao3rc.andbru123.cc.ua
 * [点击访问 镜像 1分流 推荐！](https://ao3sg.hyf9588.me/)
 链接为：https://ao3sg.hyf9588.me
