@@ -28,6 +28,10 @@
 链接为：https://ao3sg.hyf9588.me
 * [点击访问 镜像 2分流 推荐！](https://ao3rc.hyf9588.me/)
 链接为：https://ao3rc.hyf9588.me
+* [点击访问 镜像 1分流 推荐](https://ao3sg.hyf9588.tech/)
+链接为：https://ao3sg.hyf9588.tech
+* [点击访问 镜像 2分流 推荐](https://ao3rc.hyf9588.tech/)
+链接为：https://ao3rc.hyf9588.tech
 * ~~[失效镜像 1](https://ao3rc.andbru123.tk/)~~
 
 ## 镜像发布页列表
@@ -36,8 +40,11 @@
 链接为：https://nav.andbru123.us.kg
 * [点击访问 发布页 2](https://nav.andbru123.cc.ua/)
 链接为：https://nav.andbru123.cc.ua
-* [点击访问 发布页 3](https://nav.hyf9588.me/)
+* [点击访问 发布页 3](https://nav.hyf9588.tech/)
+链接为：https://nav.hyf9588.tech
+* [点击访问 发布页 4](https://nav.hyf9588.me/)
 链接为：https://nav.hyf9588.me
+
 
 ## 网页监控
 * [点击访问 镜像、原站、以及发布页状态](https://uptime.ttwglwie.cc.ua/)
