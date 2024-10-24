@@ -114,11 +114,10 @@
     </style>
     <script>
         window.onload = function() {
-            // 检查 localStorage 中是否有 visitHistory
-            var history = JSON.parse(localStorage.getItem('visitHistory')) || [];
-            if (history.length > 0) {
-                // 获取上一个页面的 URL
-                var previousPage = history[history.length - 1];
+            // 解析 URL 参数
+            var urlParams = new URLSearchParams(window.location.search);
+            var previousPage = urlParams.get('previousPage');
+            if (previousPage) {
                 // 创建一个返回按钮
                 var returnButton = document.createElement('button');
                 returnButton.innerText = '返回镜像';
