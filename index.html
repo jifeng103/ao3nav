@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>镜像发布页</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #444;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #444;
+            margin-top: 20px;
+        }
+        h3 {
+            font-size: 1.5em;
+            color: #444;
+            margin-top: 20px;
+        }
+        details {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            font-size: 1.1em;
+            color: red;
+        }
+        .link {
+            font-size: 1em;
+            color: blue;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 0.9em;
+        }
+        footer .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        footer .footer-section {
+            margin: 10px;
+            flex: 1;
+            min-width: 200px;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            // 检查 localStorage 中是否有 visitHistory
+            var history = JSON.parse(localStorage.getItem('visitHistory')) || [];
+            if (history.length > 0) {
+                // 获取上一个页面的 URL
+                var previousPage = history[history.length - 1];
+                // 创建一个返回按钮
+                var returnButton = document.createElement('button');
+                returnButton.innerText = '返回镜像';
+                returnButton.className = 'button';
+                returnButton.onclick = function() {
+                    window.location.href = previousPage;
+                };
+                document.querySelector('.return-button-container').appendChild(returnButton);
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>镜像发布页</h1>
+
+        <details>
+            <summary>日志更新</summary>
+            <ul>
+                <li>9月3日 ao3原站服务器开启了五秒盾，需要用户进行人机验证才能正常访问，请等待ao3维护好再访问</li>
+                <li>9月4日 原站关闭了五秒盾，镜像已恢复使用</li>
+            </ul>
+        </details>
+
+        <h2>关于项目</h2>
+        <p>此项目的镜像1部署在服务器上，目前无翻译(推荐使用彩云小译进行翻译)，镜像2部署在免费的PaaS服务上，目前有翻译(翻到最底下有一个下拉框，如果没有可能需要等待网页加载完，选择简体中文)，可能在晚高峰时遇到无法访问的情况。当前两个镜像都无注册和登录功能。如需要登录用户才可用的功能请访问原站。</p>
+
+        <h3>关于本页</h3>
+        <p>这是镜像项目的发布页，推荐截屏或收藏，以便镜像链接失效或当前网络不可访问时切换到可用镜像。</p>
+
+        <div class="return-button-container"></div>
+
+        <details>
+            <summary>镜像链接列表</summary>
+            <ul>
+                <li><span class="highlight"><a href="https://ao3sg.hyf9588.tech/">点击访问 镜像 1分流 推荐</a></span> 链接为：<span class="link">https://ao3sg.hyf9588.tech</span></li>
+                <li><span class="highlight"><a href="https://ao3rc.hyf9588.tech/">点击访问 镜像 2分流 推荐</a></span> 链接为：<span class="link">https://ao3rc.hyf9588.tech</span></li>
+                <li><a href="https://ao3sg.andbru123.us.kg/">点击访问 镜像 1</a> 链接为：https://ao3sg.andbru123.us.kg</li>
+                <li><a href="https://ao3rc.andbru123.us.kg/">点击访问 镜像 2</a> 链接为：https://ao3rc.andbru123.us.kg</li>
+                <li><a href="https://ao3sg.andbru123.cc.ua/">点击访问 镜像 1分流</a> 链接为：https://ao3sg.andbru123.cc.ua</li>
+                <li><a href="https://ao3rc.andbru123.cc.ua/">点击访问 镜像 2分流</a> 链接为：https://ao3rc.andbru123.cc.ua</li>
+                <li><del><a href="https://ao3rc.andbru123.tk/">失效镜像 1</a></del></li>
+                <li><del><a href="https://ao3rc.hyf9588.me/">失效镜像 2</a></del></li>
+                <li><del><a href="https://ao3sg.hyf9588.me/">失效镜像 3</a></del></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>镜像发布页列表</summary>
+            <ul>
+                <li><a href="https://nav.andbru123.us.kg/">点击访问 发布页 1</a> 链接为：https://nav.andbru123.us.kg</li>
+                <li><a href="https://nav.andbru123.cc.ua/">点击访问 发布页 2</a> 链接为：https://nav.andbru123.cc.ua</li>
+                <li><a href="https://nav.hyf9588.tech/">点击访问 发布页 3</a> 链接为：https://nav.hyf9588.tech</li>
+                <li><del><a href="https://nav.hyf9588.me/">失效发布页 1</a></del> 链接为：https://nav.hyf9588.me</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>网页监控</summary>
+            <ul>
+                <li><a href="https://uptime.ttwglwie.cc.ua/">点击访问 镜像、原站、以及发布页状态</a> 链接为：https://uptime.ttwglwie.cc.ua</li>
+            </ul>
+        </details>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p><strong>添加QQ群或QQ频道</strong></p>
+                    <p>欢迎加入我们的QQ频道或者QQ群，以便获得更多的帮助和交流：</p>
+                </div>
+                <div class="footer-section">
+                    <p><a href="https://pd.qq.com/s/8ytm1sth5" class="button">加入QQ频道</a></p>
+                    <p><a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027k=5FgjgzS-kt-9hN4_A8PFy0_q-1zB7xR&authKey=k4LEy%2FFXOtwaEp5WVcMJq3%2FcVJBnAlSzGaY%2B9mqJqgUnqasovZ2lyjspsUIO8OEn&noverify=0&group_code=984098141" class="button">加入QQ群</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
